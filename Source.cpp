@@ -82,7 +82,7 @@ istream& operator>> (istream& o, Account& a)
 {
 	long ac;
 	int co;
-	char* ma = new char(81);
+	char* ma = new char[81];
 
 	//cin >> ac >> co;
 
