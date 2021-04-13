@@ -2,6 +2,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include "clock.h"
+#include<string>
 using namespace std;
 
 
@@ -28,6 +29,9 @@ public:
 
 	float static getSumWithdraw();
 	float static getSumDeposit();
+	
+	float static sumWithdraw;
+	float static sumDeposit;
 
 	friend istream& operator>> (istream& o, Account& c);
 
@@ -35,8 +39,7 @@ private:
 	long accountNumber;
 	int code;
 	float balance;
-	char* mail;
-
-	float static sumWithdraw;
-	float static sumDeposit;
+	//char* mail;
+	string mail;
+	
 };
